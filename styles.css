@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    background: hsl(204, 43%, 93%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: 1fr 1fr;
+    width: 700px;;
+    height: 500px;
+    margin: auto;
+    margin-top: 4vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgb(65, 112, 100);
+}
+
+.flex-container {
+    display: flex;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    justify-content: space-evenly;
+}
+
+.section1 h2 {
+    line-height: 1.4;
+    font-size: 28px;
+    margin-bottom: .6em;
+    color: hsl(179, 62%, 43%);
+}
+
+.section1-1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%); 
+    margin-bottom: 0.6em;
+}
+
+.section1-2 {
+    line-height: 1.8;
+    color: hsl(218, 22%, 67%);
+}
+
+.section3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 115%;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5em
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+     color: #fff;
+}
+
+.card-2 {
+    color: #fff;
+}
+
+.card-1 b {
+    font-size: 34px;
+    margin-right: 0.8em;
+    color: #fff;
+}
+
+.c2 {
+    background: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+}
+
+button {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 350px;
+    padding: 0.8em;
+    color: #fff;
+    background: hsl(71, 73%, 54%);
+    border-radius: 6px;
+    border: none; 
+    font-weight: 700;
+    margin-top: 1em;
+    box-shadow: 0px 4px 15px rgb(65, 112, 100);
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.c3 {
+   background: #5ac3af;
+   border-bottom-right-radius: 10px;
+}
+
+.c3 h3 {
+    color: #fff;
+}
+
+.c3 ul {
+    margin-top: -1.5em;
+}
+
+.c3 li {
+    list-style-type: none;
+    line-height: 1.5;
+    color: #fff;
+}
+
+@media screen and (max-width: 750px) {
+
+    .grid-container {
+        grid-template-rows: 2fr 3fr;
+        width: 85%;
+        height: 100vh;
+        margin-top: 5vh;
+    }
+
+    .section1 {
+        padding: 1.5em;
+    }
+
+    .card {
+        height: 50%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.5em;
+    }
+
+    .section3{ 
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .c2 {
+        border-radius: 0;
+    }
+
+    .c3 {
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .c3 ul {
+        padding-top: 2.5em;
+    }
+}
