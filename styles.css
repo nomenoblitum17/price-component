@@ -13,8 +13,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 1fr 1fr;
-    width: 700px;;
-    height: 500px;
+    width: 700px;
     margin: auto;
     margin-top: 4vh;
     background: #fff;
@@ -57,7 +56,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 115%;
 }
 
 .card {
@@ -123,10 +121,11 @@ button:hover {
 
 .c3 h3 {
     color: #fff;
+    margin-bottom: 5%;
 }
 
 .c3 ul {
-    margin-top: -1.5em;
+   
 }
 
 .c3 li {
@@ -170,8 +169,8 @@ button:hover {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-
-    .c3 ul {
+}
+    ./*c3 ul {
         padding-top: 2.5em;
     }
-}
+}*/
